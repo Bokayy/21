@@ -202,19 +202,24 @@ testni podatci:
 marko: 78kg, 1.69m
 Josip: 92kg i 1.75m*/
 
-/* //izbrijavanje
- class osoba {
-     constructor(ime, tezina, visina, BMI) {
-             this.ime = ime,
+//izbrijavanje
+ class osoba
+  {
+     constructor(ime, tezina, visina) 
+        {
+            this.ime = ime,
             this.tezina = tezina,
-            this.visina = visina,
-            this.BMI = BMI;
-         function _BMI(v, t) {
-             return (t / v) ** 2;
+            this.visina = visina
+        }
+         _BMI() {
+             return this.BMI = (this.tezina / this.visina) ** 2;
          }
-     }
- }
+    }
 
+    const marko = new osoba("Marko", 78, 1.69);
+    console.log(marko._BMI());
+
+/* 
  const marko = new osoba();
 marko.ime = "Marko";
 marko.tezina = 78;
@@ -224,7 +229,7 @@ marko.BMI = osoba._BMI(visina,tezina);
 console.table(marko);
 
  */
-const osoba = {
+/* const osoba = {
     ime: String(),
     tezina: Number(),
     visina: Number(),
@@ -234,16 +239,16 @@ const osoba = {
         return this.bmi;
     }
 }
-
+ */
 /* function calcBMI(v, t) {
     return(t/v)**2;
 } */
 
-let marko = Object.create(osoba);
+/* let marko = Object.create(osoba);
 marko.ime = "Marko";
 marko.tezina = 78;
 marko.visina = 1.69;
-marko.calcBMI;
+marko.calcBMI; */
 //marko.bmi = calcBMI(marko.visina,marko.tezina);
 
 /* const marko = Object.create(osoba);
@@ -251,7 +256,7 @@ marko.ime = "Marko";
 marko.tezina = 78;
 marko.visina = 1.69;
  */
-console.table(marko);
+/* console.table(marko); */
 
 
 
