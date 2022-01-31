@@ -89,6 +89,6 @@ console.log(kocka);
 
 while (kocka !==6){
     console.log(`Dobio si ${kocka}`);
-    kocka = Math.trunc(Math.random()) * 6) + 1;
+    kocka = Math.trunc(Math.random() * 6) + 1;
     if (kocka === 6) console.log(`Dobio si ${kocka}`);
 }
